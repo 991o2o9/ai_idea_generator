@@ -1,0 +1,18 @@
+.logo {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   .icon {
+      font-size: 80px;
+   }
+}
+
+.smallLogo {
+   .icon {
+      display: none;
+   }
+   .logoText {
+      font-size: 24px !important;
+      font-family: 'Belanosima';
+   }
+}

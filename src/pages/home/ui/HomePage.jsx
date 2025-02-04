@@ -1,9 +1,11 @@
-import { Typography } from '@src/shared/ui/typography/Typography';
+import { Header } from '@src/widgets/header';
+import { HeroBlock } from '@src/widgets/heroBlock';
 
 export const HomePage = () => {
    return (
       <div>
-         <Typography variant="h1">Home Page</Typography>
+         <Header />
+         <HeroBlock />
       </div>
    );
 };
