@@ -10,6 +10,7 @@ export const Typography = ({
    truncate = false,
    size = '',
    onClick,
+   ref,
    ...props
 }) => {
    const allowedTags = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'span', 'div'];
@@ -36,6 +37,7 @@ export const Typography = ({
 
    return (
       <Tag
+         ref={ref}
          onClick={onClick}
          className={`${styles.typography} ${styles[variant]} ${sizeClass} ${className}`}
          style={{
