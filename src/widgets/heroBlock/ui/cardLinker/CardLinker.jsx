@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { gsap } from 'gsap';
 import { Typography } from '@src/shared/ui/typography/Typography';
 import styles from './CardLinker.module.scss';
+import { Link } from 'react-router-dom';
 
 export const CardLinker = ({ item }) => {
    const cardRef = useRef(null);
@@ -29,16 +30,20 @@ export const CardLinker = ({ item }) => {
    };
 
    return (
-      <div
-         className={styles.card}
-         ref={cardRef}
-         onMouseEnter={handleMouseEnter}
-         onMouseLeave={handleMouseLeave}
-      >
-         <Typography color="#fff">{item.title}</Typography>
-         <div className={styles.cardDescription}>
-            <Typography>{item.description}</Typography>
+      <Link to={item.path}>
+         <div
+            className={styles.card}
+            ref={cardRef}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+         >
+            <Typography className={styles.title}>{item.title}</Typography>
+            <div className={styles.cardDescription}>
+               <Typography className={styles.description}>
+                  {item.description}
+               </Typography>
+            </div>
          </div>
-      </div>
+      </Link>
    );
 };

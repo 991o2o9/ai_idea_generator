@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { Layout } from '../../layout/Layout';
 import { path } from '@src/shared/constants/constants';
-import { HomePage } from '@src/pages';
+import { AboutUs, ChatPage, HomePage } from '@src/pages';
 
 export const router = createBrowserRouter(
    [
@@ -12,6 +12,14 @@ export const router = createBrowserRouter(
             {
                path: path.home,
                element: <HomePage />,
+            },
+            {
+               path: path.chat,
+               element: <ChatPage />,
+            },
+            {
+               path: path.about,
+               element: <AboutUs />,
             },
          ],
       },
