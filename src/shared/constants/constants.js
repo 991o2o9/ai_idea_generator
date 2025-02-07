@@ -16,3 +16,11 @@ export const cardData = [
       path: path.about,
    },
 ];
+
+export const phrases = [
+   'Make your dreams come true',
+   'Believe in yourself',
+   'Stay positive, work hard',
+   'Success is the sum of small efforts',
+   'Turn your ideas into reality',
+];

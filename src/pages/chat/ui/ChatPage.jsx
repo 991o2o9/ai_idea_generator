@@ -1,3 +1,9 @@
+import { AskBlock } from '@src/widgets/chatWidgets';
+
 export const ChatPage = () => {
-   return <div>Chat page</div>;
+   return (
+      <div>
+         <AskBlock />
+      </div>
+   );
 };
