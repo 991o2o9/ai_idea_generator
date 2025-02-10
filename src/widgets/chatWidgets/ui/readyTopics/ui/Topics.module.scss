@@ -1,0 +1,23 @@
+.topic {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   &Card {
+      width: fit-content;
+      padding: 5px;
+      border-radius: 8px;
+      border: 1px solid gray;
+   }
+}
+
+.firstPart {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.secondPart {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
