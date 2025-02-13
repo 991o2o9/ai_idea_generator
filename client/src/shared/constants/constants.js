@@ -24,3 +24,21 @@ export const phrases = [
    'Success is the sum of small efforts',
    'Turn your ideas into reality',
 ];
+
+export const topics = [
+   'Programming',
+   'Artificial Intelligence',
+   'Web Development',
+   'Mobile Development',
+   'Cybersecurity',
+   'UI/UX Design',
+   'Game Development',
+   'Fintech',
+   'Marketing & SEO',
+   'Startups & Business',
+   'Process Automation',
+   'Blockchain & Cryptocurrencies',
+   'Education & Online Courses',
+   'Health & Fitness',
+   'Science & Technology',
+];

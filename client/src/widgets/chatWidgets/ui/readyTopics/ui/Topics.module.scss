@@ -3,9 +3,10 @@
    flex-direction: column;
    gap: 10px;
    &Card {
+      cursor: pointer;
       width: fit-content;
       padding: 5px;
-      border-radius: 8px;
+      border-radius: 12px;
       border: 1px solid gray;
    }
 }
